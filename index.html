@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Learning Js</title>
+    </head>
+    <body>
+        <input type="number" placeholder="enter text" id="Rose"><br><br>
+        <button id="Btn" ondblClick="test()">Double click</button>     
+    </body>
+    <script type="text/javascript">
+        function test(){
+            let testNumber=document.getElementById("Rose").value;
+            testNumber=Number(testNumber);
+          switch(testNumber){
+            case 10:
+                alert("case 10");
+                break;
+            case 20:
+                alert("case 20");
+                break;
+            case 30:
+                alert("case 30");
+                break;
+            default:
+                alert("This is default");
+          }
+        }
+        let Btn=document.getElementById("Btn");
+        Btn.addEventListener("click",test);
+    </script>
+    
+</HTML>
